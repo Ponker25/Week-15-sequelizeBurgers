@@ -1,20 +1,19 @@
-// Inside the `burgers_controller.js` file, import the following:
-
-//    * Express
-//    * `burger.js`
-
-// 4. Create the `router` for the app, and export the `router` at the end of your file.
-
+// DEPENDENCIES
 var express = require("express");
+var db = require("../models/index");
 
+// initialize Router
 var router = express.Router();
 
-// Import the model (burger.js) to use its database functions.
-var burger = require("../models/burger.js");
+var sequelize = db.sequelize;
+
+sequelizeConnection.sync();
+
+// Routes:
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  burger.all(function(data) {
+  db.Burger.findAll(function(data) {
     var hbsObject = {
       burgers: data
     };
