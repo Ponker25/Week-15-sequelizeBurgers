@@ -1,0 +1,50 @@
+body {
+  background: url(../../images/burgers-background.jpg);
+}
+
+.container {
+  padding: 65px;  
+}
+
+.jumbotron {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+
+h1 {
+  text-align: center;
+  padding: 15px; 
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#addBurger {
+  text-align: center;
+  padding: 5px;
+  margin-top: 35px;
+}
+  
